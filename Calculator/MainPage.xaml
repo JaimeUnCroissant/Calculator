@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <Grid BackgroundColor="#303030">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Border Stroke="black" StrokeThickness="3"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <Label FontSize="28" HorizontalOptions="End" Text="" VerticalOptions="End" x:Name="equation" TextColor="#eeeeee"  Margin="20"></Label>
+        </Border>
+
+       
+
+
+        <Button Clicked="GoBack" Grid.Row="2" Grid.Column="0" Margin="5" CornerRadius="8" Text="&lt;--" TextColor="black" BackgroundColor="#e6e6e6"/>
+        
+        <Button Grid.Row="2" Grid.Column="1" Margin="5" Clicked="AddChar" CornerRadius="8" Text="/" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Grid.Row="2" Grid.Column="2" Margin="5" Clicked="AddChar" CornerRadius="8" Text="*" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Grid.Row="2" Grid.Column="3" Margin="5" Clicked="AddChar" Grid.RowSpan="2" CornerRadius="8" Text="-" TextColor="black" BackgroundColor="#e6e6e6"/>
+        
+        <Button Clicked="Write" Grid.Row="3" Grid.Column="0" Margin="5" CornerRadius="8" Text="7" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="3" Grid.Column="1" Margin="5" CornerRadius="8" Text="8" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="3" Grid.Column="2" Margin="5" CornerRadius="8" Text="9" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="4" Grid.Column="0" Margin="5" CornerRadius="8" Text="4" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="4" Grid.Column="1" Margin="5" CornerRadius="8" Text="5" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="4" Grid.Column="2" Margin="5" CornerRadius="8" Text="6" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Grid.Row="4" Grid.Column="3" Margin="5" Grid.RowSpan="2" CornerRadius="8" Clicked="AddChar" Text="+" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="5" Grid.Column="0" Margin="5" CornerRadius="8" Text="1" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="5" Grid.Column="1" Margin="5" CornerRadius="8" Text="2" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="5" Grid.Column="2" Margin="5" CornerRadius="8" Text="3" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Clear" Grid.Row="6" Grid.Column="0" Margin="5" CornerRadius="8" Text="C" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Clicked="Write" Grid.Row="6" Grid.Column="1" Margin="5" CornerRadius="8" Text="0" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Grid.Row="6" Grid.Column="2" Margin="5" CornerRadius="8" Clicked="AddChar" Text="," TextColor="black" BackgroundColor="#e6e6e6"/>
+
+        <Button Grid.Row="6" Grid.Column="3"  Margin="5" CornerRadius="8" Clicked="Solve" Text="=" TextColor="black" BackgroundColor="#e6e6e6"/>
+
+
+
+    </Grid>
+
+</ContentPage>
